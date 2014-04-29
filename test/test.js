@@ -1,6 +1,6 @@
 var bisect = require("../bisect")
 
-require("tap").test("testing", function(t) {
+require("tape")("testing", function(t) {
 
   t.assert(Math.abs(bisect(function(x) {
     return x*x - 9 > 0
